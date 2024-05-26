@@ -1,0 +1,507 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap");
+*,
+html {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Montserrat";
+}
+/* General Styles */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.inter *{
+  font-family: 'Inter';
+}
+
+/* Header Styles */
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 30px 30px;
+  background-color: #fff;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+header .logo img {
+  height: 40px;
+}
+
+header nav ul {
+  list-style: none;
+  display: flex;
+  margin: 0;
+  padding: 0;
+}
+
+header nav ul li {
+  margin: 0 15px;
+}
+header nav ul li a:hover {
+  border-color: #f1782d;
+  color: #f1782d;
+  margin: 0 15px;
+}
+
+header nav ul li a {
+  color: #333;
+  border: 1px solid transparent;
+  text-decoration: none;
+  padding: 4px 10px;
+  border-radius: 20px;
+  font-weight: bold;
+}
+
+header .header-icons a {
+  margin-left: 15px;
+}
+
+input::placeholder{
+  color: white;
+}
+/* Main Banner Styles */
+.main-banner {
+  display: flex;
+  align-items: start;
+  padding: 50px 20px;
+  height: 90vh;
+  background-color: #f4f4f4;
+  background: url("../assets/hero-bg.png") no-repeat;
+  background-size: cover;
+}
+
+.main-banner .banner-content {
+  flex: 1;
+  display: flex;
+  margin-top: 2rem;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.main-banner .banner-content p {
+  font-size: 1.2em;
+  margin-bottom: 20px;
+  width: 45vw;
+  text-align: center;
+  color: #fff;
+}
+
+.main-banner .banner-content button {
+  padding: 15px 25px;
+  font-size: 1em;
+  color: #fff;
+  background-color: #333;
+  border: none;
+  cursor: pointer;
+  border-radius: 10px;
+}
+
+.main-banner .banner-image img {
+  width: 100%;
+  max-width: 500px;
+}
+
+/* Copper Styles Section */
+.copper-styles {
+  padding: 50px 20px;
+  text-align: center;
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+.copper-styles h2 {
+  font-size: 3rem;
+  font-weight: 700;
+  font-family: "Montserrat";
+  margin-bottom: 20px;
+}
+
+.copper-styles .styles-images {
+  display: flex;
+  justify-content: end;
+  gap: 20px;
+  margin-bottom: 20px;
+}
+
+.copper-styles .styles-images img {
+  width: 20rem;
+  height: 20rem;
+}
+
+.copper-styles button {
+  padding: 10px 20px;
+  font-size: 1em;
+  color: #fff;
+  background-color: #333;
+  border: none;
+  cursor: pointer;
+}
+
+/* Custom Design Section */
+.custom-design {
+  padding: 50px 20px;
+  background-color: #f4f4f4;
+  text-align: center;
+}
+
+.custom-design h2 {
+  font-size: 2em;
+  margin-bottom: 20px;
+}
+
+.custom-design p {
+  font-size: 1.2em;
+  margin-bottom: 20px;
+}
+
+.custom-design button {
+  padding: 10px 20px;
+  font-size: 1em;
+  color: #fff;
+  background-color: #333;
+  border: none;
+  cursor: pointer;
+}
+
+/* Informative Gaming Section */
+.informative-gaming {
+  padding: 50px 20px;
+  text-align: center;
+}
+
+.informative-gaming h2 {
+  font-size: 2em;
+  margin-bottom: 20px;
+}
+
+.informative-gaming p {
+  font-size: 1.2em;
+  margin-bottom: 20px;
+}
+
+.informative-gaming button {
+  padding: 10px 20px;
+  font-size: 1em;
+  color: #fff;
+  background-color: #333;
+  border: none;
+  cursor: pointer;
+  margin: 0 10px;
+}
+
+/* Why Ikkis Section */
+.why-ikkis {
+  padding: 50px 20px;
+  text-align: center;
+}
+
+.why-ikkis h2 {
+  font-size: 3rem;
+  margin-bottom: 20px;
+}
+
+.why-ikkis .ikkis-benefits {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  margin-bottom: 20px;
+}
+
+.why-ikkis .ikkis-benefits .benefit {
+  /* text-align: center; */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  position: relative;
+  border-radius: 15px;
+  background: red;
+}
+
+.why-ikkis .ikkis-benefits .benefit img {
+  width: 100%;
+  height: auto;
+  /* margin-bottom: 10px; */
+}
+.why-ikkis .ikkis-benefits .benefit > div {
+  position: absolute;
+  bottom: -18rem;
+  width: 24rem;
+  height: 24rem;
+  border-radius: 200% 200% 0 0;
+  background: var(--bg-color);
+  font-size: 1.4rem;
+  display: flex;
+  align-items: start;
+  padding-top: 10%;
+  color: white;
+  justify-content: center;
+}
+.why-ikkis blockquote {
+  font-style: italic;
+  margin: 50px auto;
+  max-width: 600px;
+}
+
+/* Products Section */
+.products {
+  display: flex;
+  padding: 20px;
+}
+
+.products-sidebar {
+  background-color: #005288; /* Matching the blue color */
+  color: white;
+  padding: 20px;
+  width: 500px; /* Fixed width for the sidebar */
+  text-align: center;
+}
+
+.products-sidebar h2 {
+  font-size: 1.5em;
+}
+
+.product-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  justify-content: space-between;
+}
+
+.product {
+  flex: 1 1 calc(33.333% - 20px); /* Each product takes up 1/3 of the available space minus the gap */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.product img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* Testimonials Section */
+.testimonials {
+  margin-top: 6rem;
+  display: flex;
+  justify-content: space-around;
+  padding: 50px 20px;
+  text-align: center;
+}
+
+.testimonial {
+  flex: 1;
+  max-width: 300px;
+  margin: 0 20px;
+}
+
+.testimonial .stars {
+  font-size: 1.5em;
+  color: gold;
+  margin-bottom: 10px;
+}
+
+.testimonial p {
+  font-size: 1em;
+  color: #333;
+  margin-bottom: 10px;
+  line-height: 1.5;
+}
+
+.testimonial h4 {
+  font-size: 1.2em;
+  color: #000;
+  margin-bottom: 5px;
+}
+
+.testimonial span {
+  font-size: 0.9em;
+  color: #777;
+}
+
+/* Featured In Section */
+.featured-in {
+  margin-top: 6rem;
+  padding: 50px 20px;
+  text-align: center;
+}
+
+.featured-in h2 {
+  font-size: 2em;
+  margin-bottom: 20px;
+}
+
+.featured-in .featured-logos {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.featured-in .featured-logos img {
+  aspect-ratio: 3/2;
+  object-fit: contain;
+  mix-blend-mode: multiply;
+  width: 100px;
+  height: auto;
+}
+
+/* Footer Section */
+footer {
+  /* height: 25rem; */
+  padding: 50px 30px;
+  background-color: #48362f;
+  color: #fff;
+  position: relative;
+  overflow: hidden;
+}
+input:focus {
+  outline: none;
+}
+footer .footer-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+footer .footer-logo img {
+  width: 160px;
+  height: auto;
+  margin-bottom: 20px;
+}
+
+footer .footer-links,
+footer .footer-info,
+footer .footer-contact {
+  margin-bottom: 20px;
+}
+
+footer .footer-links h3,
+footer .footer-info h3,
+footer .footer-contact h3 {
+  font-size: 1.2em;
+  margin-bottom: 10px;
+}
+
+footer .footer-links ul,
+footer .footer-info ul {
+  list-style: none;
+  padding: 0;
+}
+
+footer .footer-links ul li,
+footer .footer-info ul li {
+  margin-bottom: 10px;
+}
+
+footer .footer-links ul li a,
+footer .footer-info ul li a {
+  text-decoration: none;
+  color: #fff;
+}
+
+footer .footer-contact {
+  width: 10rem;
+}
+footer .footer-contact address p {
+  margin: 0;
+}
+
+footer .footer-social a {
+  margin-right: 15px;
+}
+
+/* DESIGN LAB */
+.thaali-section {
+  height: 40rem;
+  display: flex;
+  justify-content: space-between;
+  background: #f7e0c7;
+}
+.colored-circle {
+  height: 1.8rem;
+  width: 1.8rem;
+  border-radius: 50%;
+  background: var(--color);
+  border: 3px solid var(--color);
+  position: relative;
+  overflow: hidden;
+}
+
+.colored-circle::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 50%;
+  width: 50%;
+  height: 100%;
+  background: #f7e0c7;
+}
+.circle {
+  height: 1rem;
+  width: 1rem;
+  border-radius: 50%;
+  border: 2px solid #333;
+}
+
+.button-container {
+  display: flex;
+  gap: 1rem;
+  margin-bottom: 5rem;
+}
+
+.btn {
+  padding: 0.5rem 1.5rem;
+  font-size: 14px;
+  border-radius: 30px;
+  border: 2px solid #005288; /* Dark Blue */
+  cursor: pointer;
+  transition: background-color 0.2s, color 0.2s;
+}
+
+/* Outline Button Style */
+.btn.outline {
+  background-color: transparent;
+  color: #005288; /* Dark Blue */
+}
+
+.btn.outline:hover {
+  background-color: #005288; /* Dark Blue */
+  color: #ffffff;
+}
+
+/* Filled Button Style */
+.btn.filled {
+  background-color: #005288; /* Dark Blue */
+  color: #ffffff;
+}
+
+.btn.filled:hover {
+  background-color: #003f6b; /* Darker Blue */
+}
+
+.howitwork {
+  background-color: #f1782d;
+  padding: 50px;
+  text-align: center;
+  font-family: "Inter";
+  color: white;
+}
+.howitwork>p{
+  font-family: "Inter";
+  width: 60vw;
+  margin-inline:auto ;
+  margin-block: 3rem;
+}
+.howitwork>a{
+  font-family: 'Inter';
+  color: white;
+  
+}
